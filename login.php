@@ -1,6 +1,8 @@
+<?php session_start() ?>
+
 <?php
 
-print_r($_POST); // print_r permet d'afficher le contenu d'un tableau
+//print_r($_POST); // print_r permet d'afficher le contenu d'un tableau
 $email = $_POST["email"];
 $password = $_POST["password"];
 
@@ -30,11 +32,9 @@ while($client = $query->fetch(PDO::FETCH_OBJ)) {
 if ($query->rowCount() == 0) {
   echo 'client introuvable';
 } else {
-  echo 'connexion réussie';
-  header('Location:index.html'); // redirection
+  //echo 'connexion réussie';
+  $_SESSION["connected_user"] = $email;
+  header('Location:index.php'); // redirection
 }
-
-
-
 
 ?>

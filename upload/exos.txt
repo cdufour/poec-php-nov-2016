@@ -1,0 +1,13 @@
+Créer une interface administrateur de gestion photos
+
+Functionnalités:
+ - ajouter une photo sur le serveur/db
+ - supprimer une photo
+ - visualiser la liste des photos enregistrées
+
+Propriétés d'une photo:
+- id
+- nom
+- auteur
+- lieu
+- catégories (une photo pourra avoir plusieurs tags)
