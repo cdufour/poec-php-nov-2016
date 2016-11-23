@@ -5,10 +5,6 @@
     <title>Admin Phototheque</title>
   </head>
   <body>
-    <nav>
-      <a href="photo-list.php">Liste des photos</a>
-      <a href="photo-add.php">Ajouter une photo</a>
-    </nav>
-    
+    <?php include('includes/menu.inc.php') ?>
   </body>
 </html>
