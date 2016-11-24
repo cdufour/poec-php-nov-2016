@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="photothequeApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Photothèque : accès public</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div ng-controller="mainController">
+      <div>
+        <input
+          type="text"
+          ng-model="search"
+          placeholder="recherche par mots-clés">
+      </div>
+      <table class="table table-striped list">
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th class="clicable" ng-click="changeOrder('author')">Auteur</th>
+            <th class="clicable" ng-click="changeOrder('place')">Lieu</th>
+            <th>Catégorie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="photo in photos | filter:search | orderBy:key:reverse">
+            <td><img ng-src="uploaded-photos/{{photo.name}}"></td>
+            <td>{{photo.author | uppercase}}</td>
+            <td>{{photo.place}}</td>
+            <td>{{photo.category}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

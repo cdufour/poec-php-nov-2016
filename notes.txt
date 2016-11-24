@@ -5,3 +5,10 @@ TP: Gestion des catégories.
 Implémenter les fonctionnalités suivantes :
 - ajout d'une catégorie
 - liste des catégories
+
+
+
+Afficher un menu déroulant des catégories dans la page Front-end (index.html)
+
+Les caégories seront obtenues par requête ajax à l'url :
+http://localhost/formation-php/phototheque/admin/categories-json.php

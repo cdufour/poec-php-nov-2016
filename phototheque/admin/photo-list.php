@@ -21,7 +21,7 @@
       </thead>
       <tbody>
 
-        <?php 
+        <?php
 
           $db = new PDO('mysql:host=localhost;dbname=formation-php', 'root', '');
 
@@ -29,7 +29,7 @@
 
           while($photo = $query->fetch(PDO::FETCH_OBJ)) {
             $row = '<tr>';
-            $row .= '<td><img src="uploaded-photos/'.$photo->name.'"></td>';
+            $row .= '<td><img src="../public/uploaded-photos/'.$photo->name.'"></td>';
             $row .= '<td>'.$photo->author.'</td>';
             $row .= '<td>'.$photo->place.'</td>';
 
