@@ -21,7 +21,7 @@
       </thead>
       <tbody>
 
-        <?php
+        <?php 
 
           $db = new PDO('mysql:host=localhost;dbname=formation-php', 'root', '');
 

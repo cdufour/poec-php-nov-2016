@@ -1,2 +1,7 @@
 
 https://github.com/cdufour/poec-php-nov-2016
+
+TP: Gestion des catégories.
+Implémenter les fonctionnalités suivantes :
+- ajout d'une catégorie
+- liste des catégories
